@@ -1,59 +1,33 @@
-# QuartzMat — reconstrucción en código
+# QuartzMat Code Rebuild
 
-Reconstrucción inicial del sitio `quartzmat.cl` en React + Vite a partir del material recuperado de Google Drive.
+Modern React/Vite rebuild of the QuartzMat website.
 
-## Objetivo
-- Sustituir la dependencia de WordPress por un código fuente versionable.
-- Conservar el enfoque UX/UI y los textos ya trabajados.
-- Priorizar claridad comercial: entender el producto en menos de 10 segundos.
-- Preparar el frontend para una futura integración segura con Flow.
-- Evitar credenciales y secretos dentro del repositorio/frontend.
+## Current status
 
-## Ejecutar localmente
+- React/Vite storefront structure
+- Product catalog and cart UI
+- Real QuartzMat product imagery selected from Drive and integrated into the relevant product cards
+- Real QuartzMat brand mark integrated into the header/footer and favicon
+- Flow environment variables reserved via `.env.example`
+
+## Local development
+
 ```bash
 npm install
 npm run dev
 ```
 
-## Build de producción
+## Production build
+
 ```bash
 npm run build
 npm run preview
 ```
 
-## Estado de esta versión
-Incluye:
-- Home responsive.
-- Hero y propuesta de valor.
-- 4 categorías/productos recuperados.
-- Selectores de funda/opciones.
-- Carrito funcional en frontend.
-- Dirección de showroom.
-- Diseño basado en paleta UX recuperada.
-- Documentación del estudio UX, branding y textos originales.
-- Aviso para no presentar afirmaciones médicas no comprobadas.
+## Assets
 
-Pendiente antes de publicar:
-- Incorporar fotografías y logo originales en formatos web optimizados.
-- Definir precios/stock definitivos.
-- Implementar backend de checkout.
-- Conectar Flow mediante backend/serverless usando variables de entorno.
-- Agregar políticas de despacho/devolución, privacidad y términos.
-- Analítica/SEO técnico.
-- Tests de accesibilidad y QA visual.
+Production-facing images live in `public/images/`. Only approved/relevant QuartzMat assets are committed; source Drive folders may contain drafts, duplicates, editing versions, or legacy material that should not be published.
 
-## Integración Flow
-No poner API Key/Secret Key en React ni en archivos públicos.
+## Payments
 
-Arquitectura recomendada:
-Frontend -> endpoint backend/serverless -> Flow API -> callback/confirmación -> frontend
-
-Crear `.env` solo para backend y mantenerlo fuera de Git:
-```
-FLOW_API_KEY=...
-FLOW_SECRET_KEY=...
-FLOW_BASE_URL=...
-```
-
-## Material recuperado
-Ver carpeta `/docs`.
+Flow credentials must be provided as environment variables in the deployment platform. Never commit API keys or secrets to GitHub.
