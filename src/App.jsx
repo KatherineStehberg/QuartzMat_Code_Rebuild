@@ -233,7 +233,6 @@ function App() {
           <span className="brand__mark">Q</span><b>QuartzMat</b>
         </a>
         <p>Bienestar impulsado por la fuerza natural del cuarzo.</p>
-        <small>Prototipo reconstruido en código a partir del material UX/UI y contenidos recuperados.</small>
       </footer>
 
       <CartDrawer
