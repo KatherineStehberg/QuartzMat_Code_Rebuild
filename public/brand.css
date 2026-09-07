@@ -1,0 +1,8 @@
+.brand__mark {
+  background: #fff url('/images/quartzmat-logo.webp') center/cover no-repeat !important;
+  color: transparent !important;
+  font-size: 0 !important;
+  overflow: hidden;
+}
+.brand__mark::selection { background: transparent; }
+.brand--footer .brand__mark { background-color: #fff !important; }
