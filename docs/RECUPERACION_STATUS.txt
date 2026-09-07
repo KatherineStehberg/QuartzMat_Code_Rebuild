@@ -1,0 +1,10 @@
+RECUPERACIÓN QUARTZMAT
+- Textos del sitio: recuperados
+- Estudio UX/UI: recuperado
+- Evaluación UX/UI: recuperada
+- Branding: recuperado
+- Plan de negocio: localizado
+- Informes de avance: localizados
+- Código WordPress original: no recuperado / no reutilizado
+- Nuevo código React/Vite: creado
+- Flow: preparado arquitectónicamente, no se incluyeron credenciales
